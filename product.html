@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details - CardVault</title>
+    <meta name="description" content="View detailed information about the selected card.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+        <p>This is a temporary preview. Deploy your app before sharing to keep it live.</p>
+        <button class="close-notification"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- Dashboard Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">CardVault</span>
+                </a>
+            </div>
+            <nav class="dashboard-nav">
+                <ul>
+                    <li><a href="dashboard.html">HOME</a></li>
+                    <li><a href="#" class="active">CARDS</a></li>
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">ADD FUNDS</a></li>
+                    <li><a href="#">MORE</a></li>
+                </ul>
+            </nav>
+            <div class="dashboard-actions">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <span class="balance">$0</span>
+                <a href="#" class="user-icon">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Product Content -->
+    <main class="product-main">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <span class="breadcrumb-title">PRODUCT DETAILS</span>
+                <div class="breadcrumb-path">
+                    <a href="dashboard.html">Home</a> &gt; <a href="dashboard.html">Shop</a> &gt; Product
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="product-details-section">
+                <div class="product-left">
+                    <div class="product-card">
+                        <div class="product-card-inner">
+                            <div class="card-top">
+                                <div class="bank-logo" id="cardBankLogo">DISCOVER</div>
+                                <div class="card-chip">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                            </div>
+                            <div class="card-number" id="cardNumberDisplay">6011********</div>
+                            <div class="card-bottom">
+                                <div class="card-holder">
+                                    <span>CARD HOLDER</span>
+                                    <div id="cardHolderDisplay">Marmaduc Mrton</div>
+                                </div>
+                                <div class="card-expires">
+                                    <span>EXPIRES</span>
+                                    <div id="cardExpiryDisplay">02/25</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-info">
+                        <h1 id="cardTypeDisplay">DISCOVER Card - UNITED STATES</h1>
+                        <p class="product-description">High quality DISCOVER card with medium transaction limits. Perfect for everyday purchases and online services.</p>
+                        
+                        <div class="card-details">
+                            <h2>Card Details</h2>
+                            <ul>
+                                <li><span>Card Type:</span> <span id="cardTypeInfo">DISCOVER</span></li>
+                                <li><span>Expiry:</span> <span id="cardExpiryInfo">02/2025</span></li>
+                                <li><span>Bank:</span> <span id="cardBankInfo">Discover Bank</span></li>
+                                <li><span>Balance:</span> <span id="cardBalanceInfo">$1695</span></li>
+                                <li><span>Transaction Limits:</span> <span id="cardLimitsInfo">$1000 per day</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="payment-method">
+                            <h3>Payment Method: <span class="not-selected">Not selected</span></h3>
+                            <button class="select-payment-btn">Select Payment Method</button>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <button class="checkout-btn">Proceed to Checkout</button>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-right">
+                    <div class="order-information">
+                        <h2>Order Information</h2>
+                        <div class="order-details">
+                            <div class="order-item">
+                                <span class="label">Price</span>
+                                <span class="value" id="cardPriceInfo">$19.00</span>
+                            </div>
+                            <div class="order-item">
+                                <span class="label">Card Number</span>
+                                <span class="value" id="cardNumberInfo">6011********</span>
+                            </div>
+                            <div class="order-item">
+                                <span class="label">CVV</span>
+                                <span class="value" id="cardCvvInfo">544</span>
+                            </div>
+                            <div class="order-item">
+                                <span class="label">Country</span>
+                                <span class="value" id="cardCountryInfo">UNITED STATES</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="security-notice">
+                        <i class="fas fa-shield-alt"></i>
+                        <p>Your transaction is secured with industry-standard encryption. Purchased card details will be available in your account immediately after payment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dashboard-footer">
+        <div class="container">
+            <p>&copy; 2024 CardVault. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/product.js"></script>
+</body>
+</html>

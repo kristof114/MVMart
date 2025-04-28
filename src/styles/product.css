@@ -1,0 +1,417 @@
+/* 
+  CardVault - Product Details Styles
+  Styles for the product details page
+*/
+
+/* ===== Product Page Layout ===== */
+.product-main {
+    padding: 30px 0;
+  }
+  
+  .product-details-section {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .product-left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-right {
+    flex: 1;
+  }
+  
+  /* ===== Product Card Visual ===== */
+  .product-card {
+    background: linear-gradient(45deg, #3461ff 0%, #4f00bc 100%);
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card-inner {
+    width: 90%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+  }
+  
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bank-logo {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .card-chip {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-number {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  
+  .card-bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card-holder, .card-expires {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-holder span, .card-expires span {
+    font-size: 10px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+  }
+  
+  .card-holder div, .card-expires div {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* ===== Product Information ===== */
+  .product-info {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+  }
+  
+  .product-info h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .product-description {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+  
+  .card-details {
+    margin-bottom: 30px;
+  }
+  
+  .card-details h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .card-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card-details li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+  }
+  
+  .card-details li:last-child {
+    border-bottom: none;
+  }
+  
+  .payment-method {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .payment-method h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .not-selected {
+    color: #e74c3c;
+    font-weight: normal;
+  }
+  
+  .select-payment-btn {
+    background-color: #fff;
+    border: 1px solid #3461ff;
+    color: #3461ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .select-payment-btn:hover {
+    background-color: #f0f5ff;
+  }
+  
+  .product-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .checkout-btn, .add-to-cart-btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .checkout-btn {
+    background-color: #3461ff;
+    color: white;
+    border: none;
+    flex: 2;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #274ad9;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #fff;
+    color: #3461ff;
+    border: 1px solid #3461ff;
+    flex: 1;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #f0f5ff;
+  }
+  
+  /* ===== Order Information ===== */
+  .order-information {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .order-information h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .order-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .label {
+    color: #666;
+  }
+  
+  .value {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .security-notice {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .security-notice i {
+    color: #3461ff;
+    font-size: 20px;
+    margin-top: 3px;
+  }
+  
+  .security-notice p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 1100px) {
+    .product-details-section {
+      flex-direction: column;
+    }
+    
+    .product-right {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .order-information, .security-notice {
+      flex: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-right {
+      flex-direction: column;
+    }
+    
+    .product-card {
+      max-width: 100%;
+      height: 200px;
+    }
+    
+    .card-number {
+      font-size: 20px;
+    }
+    
+    .product-info h1 {
+      font-size: 20px;
+    }
+    
+    .product-actions {
+      flex-direction: column;
+    }
+    
+    .checkout-btn, .add-to-cart-btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .breadcrumb {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .breadcrumb-path {
+      margin-top: 5px;
+    }
+    
+    .product-card {
+      height: 180px;
+    }
+    
+    .bank-logo {
+      font-size: 18px;
+    }
+    
+    .card-number {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+    
+    .card-holder div, .card-expires div {
+      font-size: 12px;
+    }
+  }
+  
+  /* Payment Modal Styles */
+  .payment-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+  }
+  
+  .payment-modal-content {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      max-width: 90%;
+  }
+  
+  .payment-modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+  
+  .close-modal {
+      cursor: pointer;
+      font-size: 24px;
+  }
+  
+  .payment-options {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+  }
+  
+  .payment-option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .payment-option:hover {
+      background: #f9f9f9;
+  }
+  
+  .payment-option img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+  }
+  
+  .confirm-payment {
+      width: 100%;
+      padding: 12px;
+      background: #3461ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .confirm-payment:hover {
+      background: #274ad9;
+  }

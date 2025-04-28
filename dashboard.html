@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CardVault</title>
+    <meta name="description" content="Access and purchase premium digital cards with secure payment options and instant delivery.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-page">
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+        <p>This is a temporary preview. Deploy your app before sharing to keep it live.</p>
+        <button class="close-notification"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- Dashboard Header -->
+    <header class="dashboard-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">CardVault</span>
+                </a>
+            </div>
+            <nav class="dashboard-nav">
+                <ul>
+                    <li><a href="dashboard.html" class="active">HOME</a></li>
+                    <li><a href="#">SHOP <span class="badge">BETA</span></a></li>
+                    <li><a href="#">MY ACCOUNT</a></li>
+                    <li><a href="#">ADD FUNDS</a></li>
+                    <li><a href="#">MORE</a></li>
+                </ul>
+            </nav>
+            <div class="dashboard-actions">
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <span class="balance">$0</span>
+                <a href="#" class="user-icon">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <main class="dashboard-main">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <span class="breadcrumb-title">CARDS</span>
+                <div class="breadcrumb-path">
+                    <a href="dashboard.html">Home</a> &gt; Cards
+                </div>
+            </div>
+
+            <!-- Search Section -->
+            <div class="search-section">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search Cards" class="search-input">
+                </div>
+            </div>
+
+            <!-- Cards Table Section -->
+            <div class="cards-section">
+                <h2>AVAILABLE CARDS</h2>
+                
+                <div class="cards-table-container">
+                    <table class="cards-table">
+                        <thead>
+                            <tr>
+                                <th>TYPE</th>
+                                <th>ACC. HOLDER</th>
+                                <th>CARD NUMBER</th>
+                                <th>CVV</th>
+                                <th>COUNTRY</th>
+                                <th>TRANS PER WEEK</th>
+                                <th>ADDRESS</th>
+                                <th>PRICE($)</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DISCOVER</td>
+                                <td>Hoa Zaytseva</td>
+                                <td>6011********</td>
+                                <td>464</td>
+                                <td>UNITED STATES</td>
+                                <td>2</td>
+                                <td>3826 Horizon Circle</td>
+                                <td>19.00</td>
+                                <td><button class="buy-btn" data-expiry="06/27">BUY</button></td>
+                            </tr>
+                            <tr>
+                                <td>VISA</td>
+                                <td>Valborg Murray</td>
+                                <td>4479********</td>
+                                <td>839</td>
+                                <td>UNITED STATES</td>
+                                <td>2</td>
+                                <td>4394 Hall Place</td>
+                                <td>19.00</td>
+                                <td><button class="buy-btn" data-expiry="08/28">BUY</button></td>
+                            </tr>
+                            <tr>
+                                <td>VISA</td>
+                                <td>Ben Mrton</td>
+                                <td>4490********</td>
+                                <td>516</td>
+                                <td>UNITED STATES</td>
+                                <td>2</td>
+                                <td>1517 Kincheloe Road</td>
+                                <td>19.00</td>
+                                <td><button class="buy-btn" data-expiry="10/29">BUY</button></td>
+                            </tr>
+                            <tr>
+                                <td>MASTERCARD</td>
+                                <td>Taemi Zepeda</td>
+                                <td>5156********</td>
+                                <td>677</td>
+                                <td>GERMANY</td>
+                                <td>3</td>
+                                <td>Smmeringstr. 68</td>
+                                <td>24.00</td>
+                                <td><button class="buy-btn" data-expiry="03/28">BUY</button></td>
+                            </tr>
+                            <tr>
+                                <td>DISCOVER</td>
+                                <td>Willie Bergsson</td>
+                                <td>6011********</td>
+                                <td>746</td>
+                                <td>UNITED STATES</td>
+                                <td>2</td>
+                                <td>4798 Deercove Drive</td>
+                                <td>19.00</td>
+                                <td><button class="buy-btn" data-expiry="05/29">BUY</button></td>
+                            </tr>
+                            <tr>
+                                <td>MASTERCARD</td>
+                                <td>Noor Lamoureux</td>
+                                <td>5451********</td>
+                                <td>826</td>
+                                <td>GERMANY</td>
+                                <td>3</td>
+                                <td>Mellingburgredder 99</td>
+                                <td>24.00</td>
+                                <td><button class="buy-btn" data-expiry="12/27">BUY</button></td>
+                            </tr>
+                            <tr>
+                                <td>VISA</td>
+                                <td>Modest Shalhoub</td>
+                                <td>4490********</td>
+                                <td>872</td>
+                                <td>UNITED STATES</td>
+                                <td>2</td>
+                                <td>2785 Sycamore Road</td>
+                                <td>19.00</td>
+                                <td><button class="buy-btn" data-expiry="07/28">BUY</button></td>
+                            </tr>
+                            <tr>
+                                <td>VISA</td>
+                                <td>Yuuka Jakelinen</td>
+                                <td>4490********</td>
+                                <td>627</td>
+                                <td>UNITED STATES</td>
+                                <td>4</td>
+                                <td>1753 Sugarfoot Lane</td>
+                                <td>31.00</td>
+                                <td><button class="buy-btn" data-expiry="09/30">BUY</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn">4</button>
+                    <button class="pagination-btn">5</button>
+                    <button class="pagination-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="dashboard-footer">
+        <div class="container">
+            <p>&copy; 2024 CardVault. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

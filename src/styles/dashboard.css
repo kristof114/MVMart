@@ -1,0 +1,339 @@
+/* 
+  CardVault - Dashboard Styles
+  Styles for the dashboard page after login
+*/
+
+/* ===== Dashboard Layout ===== */
+.dashboard-page {
+    background-color: #f0f2f5;
+  }
+  
+  /* ===== Dashboard Header ===== */
+  .dashboard-header {
+    background: linear-gradient(90deg, #3461ff 0%, #ff3366 100%);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .dashboard-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard-header .logo-text {
+    color: #ffffff;
+    font-size: 22px;
+  }
+  
+  /* ===== Dashboard Navigation ===== */
+  .dashboard-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-nav ul li {
+    margin: 0 15px;
+  }
+  
+  .dashboard-nav ul li a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 6px 0;
+  }
+  
+  .dashboard-nav ul li a.active,
+  .dashboard-nav ul li a:hover {
+    color: #ffffff;
+  }
+  
+  .dashboard-nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+  }
+  
+  .badge {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-weight: 400;
+  }
+  
+  /* ===== Dashboard Actions ===== */
+  .dashboard-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon, .user-icon {
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ffffff;
+    color: #ff3366;
+    font-size: 10px;
+    font-weight: 600;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .balance {
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  /* ===== Main Dashboard Content ===== */
+  .dashboard-main {
+    padding: 30px 0;
+  }
+  
+  /* ===== Breadcrumb ===== */
+  .breadcrumb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .breadcrumb-path {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .breadcrumb-path a {
+    color: #3461ff;
+  }
+  
+  /* ===== Search Section ===== */
+  .search-section {
+    background: linear-gradient(120deg, #3461ff 0%, #ff3366 100%);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .search-container {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+  
+  /* ===== Cards Section ===== */
+  .cards-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .cards-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .cards-table-container {
+    overflow-x: auto;
+  }
+  
+  .cards-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cards-table th {
+    text-align: left;
+    padding: 15px 10px;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+    text-transform: uppercase;
+  }
+  
+  .cards-table td {
+    padding: 15px 10px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .cards-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .buy-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .buy-btn:hover {
+    background-color: #27ae60;
+  }
+  
+  /* ===== Pagination ===== */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-btn {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .pagination-btn.active {
+    background-color: #3461ff;
+    color: #fff;
+    border-color: #3461ff;
+  }
+  
+  .pagination-btn:hover:not(.active) {
+    background-color: #f5f5f5;
+  }
+  
+  .pagination-btn.next {
+    width: auto;
+    padding: 0 15px;
+  }
+  
+  /* ===== Dashboard Footer ===== */
+  .dashboard-footer {
+    background-color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* ===== Responsive Design ===== */
+  @media (max-width: 992px) {
+    .dashboard-nav {
+      display: none;
+    }
+    
+    .cards-table th,
+    .cards-table td {
+      padding: 10px 5px;
+      font-size: 12px;
+    }
+    
+    .buy-btn {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dashboard-header .container {
+      flex-wrap: wrap;
+    }
+    
+    .dashboard-actions {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    
+    .breadcrumb {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .breadcrumb-path {
+      margin-top: 5px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .search-section {
+      padding: 20px 15px;
+    }
+    
+    .cards-section {
+      padding: 15px 10px;
+    }
+    
+    .cards-table-container {
+      margin: 0 -10px;
+    }
+    
+    .pagination-btn {
+      width: 30px;
+      height: 30px;
+      margin: 0 3px;
+      font-size: 12px;
+    }
+  }
